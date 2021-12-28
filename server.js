@@ -5,13 +5,13 @@ const schema = require('./schema/schema');
 const app = express();
 
 app.use(
-    '/graphql',
-    graphqlHTTP({
-        schema: schema,
-        graphiql: true,
-    })
+  '/graphql',
+  graphqlHTTP({
+    schema: schema,
+    graphiql: true,
+  })
 );
 
-app.listen(4001, () => {
-    console.log('listening...');
+app.listen(4000, () => {
+  console.log('listening...');
 });
